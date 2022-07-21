@@ -9,7 +9,7 @@ const UpdateBook = (props)=> {
 
     useEffect(()=> {
         axios
-        .get(`http://localhost:5500/books/${id}`, {
+        .get(`https://aas-book-app.herokuapp.com/books/${id}`, {
             headers: {
                 "x-auth-token": localStorage.getItem('userToken')
             },
@@ -23,7 +23,7 @@ const UpdateBook = (props)=> {
 
     const handleSubmit =(e)=> {
         e.preventDefault();
-        axios.put(`http://localhost:5500/books/${id}`, book, {
+        axios.put(`https://aas-book-app.herokuapp.com/books/${id}`, book, {
             headers: {
                 'x-auth-token': localStorage.getItem('userToken')
             }

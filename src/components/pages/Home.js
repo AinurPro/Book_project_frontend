@@ -9,7 +9,7 @@ const Home =(props)=> {
     const [books, setBooks] = useState(null)
     const history = useHistory()
     useEffect(()=> {
-axios.get('http://localhost:5500/books', {
+axios.get('https://aas-book-app.herokuapp.com/books', {
     headers:  {
         'x-auth-token': localStorage.getItem('userToken')
     } 
@@ -17,7 +17,7 @@ axios.get('http://localhost:5500/books', {
     }, [])
 
     const handleDelete = (book) => {
-        axios.delete(`http://localhost:5500/books/${book._id}`, {
+        axios.delete(`https://aas-book-app.herokuapp.com/books/${book._id}`, {
 headers: {
     "x-auth-token": localStorage.getItem("userToken"),
 },

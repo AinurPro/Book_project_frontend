@@ -15,7 +15,7 @@ const RegisterForm = (props)=> {
         e.preventDefault()
         console.log(formData)
 
-        axios.post('http://localhost:5500/users', formData)
+        axios.post('https://aas-book-app.herokuapp.com/users', formData)
         .then(res=> {
             console.log(res.data)
             // localStorage.setItem('userToken', res.data.token)

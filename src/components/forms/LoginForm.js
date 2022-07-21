@@ -15,7 +15,7 @@ const LoginForm = (props)=> {
         e.preventDefault()
         console.log(formData)
 
-        axios.post('http://localhost:5500/auth', formData)
+        axios.post('https://aas-book-app.herokuapp.com/auth', formData)
         .then(res=> {
             console.log(res.data)
             
