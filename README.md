@@ -1,21 +1,33 @@
-# Book Project App contains both Front-end and Back-end. This front-end App built on back-end that has been submitted as a requirement of the project on Module 2
+# Book Project App is front-end App built on back-end that has been submitted as a requirement of the project on Module 2
 
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` to run the apps simultaneously (both front end and back end.)
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser. At the backend the app runs on PORT 5500.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### Making a Progressive Web App
+### How the app works
+# user logs in if it is first time user
+# if the existent user, logs in right away
+# a list of books opens up
+# user can add own book, read the created by/ the date of release/ titles/content, also can remove own book.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Tech Stack
+# React
+# Axios
+# React-dom
+#React-dom-router
+#Bootstrap
+
+
+
 
 
 ### Deployment
