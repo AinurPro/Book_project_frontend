@@ -14,10 +14,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### How the app works
-# user logs in if it is first time user
-# if the existent user, logs in right away
-# a list of books opens up
-# user can add own book, read the created by/ the date of release/ titles/content, also can remove own book.
+user logs in if it is first time user
+if the existent user, logs in right away
+a list of books opens up
+user can add own book, read the created by/ the date of release/ titles/content, also can remove own book.
 
 ### Tech Stack
 # React
