@@ -34,3 +34,5 @@ user can add own book, read the created by/ the date of release/ titles/content,
 
 It is deployed in netlify via Git
 
+#Link to visit the app: https://app.netlify.com/sites/great-books-project/settings/general
+
