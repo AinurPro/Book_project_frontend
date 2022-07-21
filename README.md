@@ -32,5 +32,5 @@ user can add own book, read the created by/ the date of release/ titles/content,
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+It is deployed in netlify via Git
 
