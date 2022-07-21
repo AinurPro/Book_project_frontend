@@ -10,7 +10,7 @@ function App() {
   const [user, setUser] = useState(null)
   return (
     <div className="container">
-      <h1>The world of Books</h1>
+      <h1 className="text-primary">The world of Books</h1>
       <Switch>
         <Route exact path='/' render={routerProps => <Landing {...routerProps} setUser={setUser}/>}/>
         <Route path='/home' render={routerProps=> <Home {...routerProps} user={user} />} />

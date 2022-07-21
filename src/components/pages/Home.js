@@ -25,7 +25,7 @@ headers: {
     };
 
     const handleUpdate = (book)=> {
-        history.pushState(`/update/${book._id}`)
+        history.push(`/update/${book._id}`)
     }
     return(
        <div>
@@ -39,8 +39,8 @@ headers: {
                     <h6>{book.created_by}</h6>
                     <h6>{book.created_at}</h6>
                     <h6>{book.book_title}</h6>
-                    <h6>{book.book_content} {book.created_by === props.user.username && (<span className="btn btn-success" onClick={()=> handleDelete(book)}>X</span>
-                )}
+                    <h6>{book.book_content} {book.created_by === props.user.username && <span className="btn btn-danger" onClick={()=> handleDelete(book)}>X</span>
+                }
                  <span className="btn btn-success" onClick={()=> handleUpdate(book)}>Update</span>
                 </h6>
                      

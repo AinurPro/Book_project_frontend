@@ -19,7 +19,7 @@ const UpdateBook = (props)=> {
             setBook(res.data)
         })
         .catch((err)=> console.error(err))
-    }, []);
+    }, [id]);
 
     const handleSubmit =(e)=> {
         e.preventDefault();
@@ -35,22 +35,22 @@ const UpdateBook = (props)=> {
                 <form onSubmit={handleSubmit}>
                     <div className='mb-3'>
                     <label className="form-label" htmlFor="created_by">Created_by</label>
-                    <input className="form-control" type="text" name="created_by" value={book.created_by} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
+                    <input className="form-control" type="text" name="created_by" id="created_by" value={book.created_by} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
 
                     </div>
                     
                     <div className='mb-3'>
                     <label className="form-label" htmlFor="created_at">Created_at</label>
-                    <input className="form-control" type="text" name="created_at" value={book.created_at} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
+                    <input className="form-control" type="text" name="created_at" id="created_at" value={book.created_at} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
                     </div>
 
                     <div className='mb-3'>
                     <label className="form-label" htmlFor="book_title">Book Title</label>
-                    <input className="form-control" type="text" name="book_title" value={book.book_title} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
+                    <input className="form-control" type="text" name="book_title" id="book_title" value={book.book_title} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
                     </div>
                     <div className='mb-3'>
                     <label className="form-label" htmlFor="book_content">Book Content</label>
-                    <input className="form-control" type="text" name="book_content" value={book.book_content} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
+                    <input className="form-control" type="text" name="book_content" id="book_content" value={book.book_content} onChange={(e) => setBook({...book, [e.target.id]: e.target.value})}/>
                     </div>
                     
 

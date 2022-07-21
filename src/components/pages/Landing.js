@@ -10,7 +10,7 @@ const Landing =(props)=> {
     return(
        <div>
            <Giphy />
-            <h1>Landing Page</h1>
+            <h1 className="text-success">Landing Page</h1>
             {hasAccount === false ? (
             <div>
                 <RegisterForm setUser={setUser} />
